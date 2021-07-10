@@ -39,6 +39,11 @@ class FSLTrainer(Trainer):
         if torch.cuda.is_available():
             label = label.cuda()
             label_aux = label_aux.cuda()
+
+        print("label")
+        print(label.shape)
+        print("label_aux")
+        print(label_aux.shape)
             
         return label, label_aux
     
